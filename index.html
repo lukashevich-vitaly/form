@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buy</title>
+</head>
+<body>
+    <form action="http://www.example.com/example.php" method="GET">
+        <fieldset>
+            <legend><b>User's information</b></legend>
+            <label> <em>Name:</em><br />
+            <input type="text" name="name"></label><br />
+            <label><em>Email:</em><br />
+            <input type="email" name="email"></label><br />
+            <label><em>Phone:</em><br />
+            <input type="text" name="phone"></label><br />
+            <label><em>Password:</em><br />
+            <input type="password" name="password"></label><br>
+        </fieldset>
+        <fieldset>
+            <legend><b>Buy product</b></legend>
+            <label>Delivery city:<br />
+                <input type="text" name="city"></label><br />
+                <p>Choose payment method
+                    <label><input type="radio" name="payment" value="cash" checked="checked">Cash</label>
+                    <label><input type="radio" name="payment" value="card">Card</label>
+                    <label><input type="radio" name="payment" value="webmoney">Webmoney</label>
+                </p>
+                <p>
+                    <label for="comments">Order comment</label><br />
+                    <textarea rows="7" cols="48" id="comments"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Confirm">
+                    <input type="reset" value="Clear">
+                </p>
+
+        </fieldset>
+    </form>
+</body>
